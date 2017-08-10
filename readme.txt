@@ -1,0 +1,7 @@
+1.src下是一个简单的storm基础入门
+2.wordCountSample是一个对单词数的统计示例
+3.failedAck演示了storm的bolt对消息处理失败，然后从spout重新发送的示例
+4.drpcCaller演示本地调用远程storm集群做任务的模式。storm集群中的数据由客户端传入。
+5.trident，是对storm原始API的封装，使操作更加简明。
+6.与kafka集成
+7.与redis集成

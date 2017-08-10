@@ -1,0 +1,16 @@
+/******************** kafka ***********************/
+
+一 操作kafka建立topic 
+cd /usr/local/kafka/bin
+
+（1）创建topic主题命令：kafka-create-topic.sh --replica 1 --partition 1 --topic
+（创建名为test的topic， 1个分区分别存放数据，数据备份总共1份）
+
+（2）查看topic列表命令：kafka-topics.sh --zookeeper 192.168.1.114:2181 --list
+
+（3）kafka命令发送数据：kafka-console-producer.sh --broker-list 192.168.1.114 --topic test
+然后我们就可以编写数据发送出去了
+
+（4）kafka命令接受数据：kafka-console-consumer.sh --zookeeper 192.168.1.114 --topic test --from-beginning
+然后我们就可以看到消费的信息了
+
